@@ -11,4 +11,6 @@
 // javaScript中Promise的概念
 
 // string 数据类型方法,slice(-2)
+
+// 前端构建中babel和uglifyJS主要用来干什么
 ```
