@@ -1,0 +1,27 @@
+h1{
+    color:red;
+}
+span.special
+,li.special{
+    color:orange;
+    font-weight: bold;
+}
+h1 + p{
+    font-size: 200%;
+}
+a:link{
+    color:pink;
+}
+a:visited{
+    color:green;
+}
+a:hover{
+    text-decoration:none;
+}
+/* .<类名>表示类型选择器 */
+/* 只有html元素名称，表示元素选择器 */
+/* 共用选择器:两个选择器以逗号分隔, 表示共用下面的样式定义*/
+/*
+    后代选择器:两个选择器声明以空格隔开,
+    相邻样式选择器:同层级选择器声明之间添加+号,
+*/
