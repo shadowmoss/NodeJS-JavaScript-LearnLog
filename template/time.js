@@ -8,5 +8,10 @@ function formatDate(date){
     let second = '0'+date.getSeconds();
     return `${year}-${month.slice(-2)}-${day.slice(-2)} ${hour.slice(-2)}:${min.slice(-2)}:${second.slice(-2)}`;
 }
-
+// 获取当前时间
+function getCurrentTime(){
+    const time = new Date().toLocaleString('zh-cn');
+    return time;
+}
 module.exports.formatDate = (date)=>formatDate(date);
+module.exports.currentTime = ()=>getCurrentTime();

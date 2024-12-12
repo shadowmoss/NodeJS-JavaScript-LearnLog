@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS Grid starting point</title>
+    <style>
+        body {
+            width: 90%;
+            max-width: 900px;
+            margin: 2em auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; 定义了三个固定200px的列 */
+            /* grid-template-columns: 2fr 1fr 1fr;fr 灵活单位定义网格行与列的大小,等分grid容器空间 */
+            grid-template-columns: 300px 1fr 1fr;/*fr 单位与固定值混合使用*/
+            grid-column-gap:20px; /*网格列间隙,单位也可以是px也可以是百分比*/
+            grid-row-gap:20px; /*网格行间隙*/
+            /*网格间隙也可以用grid-gap同时定义行间隙和列间隙*/
+            
+        }
+        .container > div {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207,232,220);
+            border: 2px solid rgb(79,185,227);
+        }
+    </style>
+  </head>
+
+<body>
+    <h1>Simple grid example</h1>
+
+    <div class="container">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+    </div>
+
+</body>
+
+</html>
